@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Mellow_Fluff</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            background: #fff8fb;
+            font-family: Arial, sans-serif;
+            color: #765365;
+        }
+
+        nav {
+            background: #f6dce8;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #89566f;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        .shop-header {
+            text-align: center;
+            padding: 35px 15px 15px;
+        }
+
+        .shop-header h1 {
+            color: #a75c7e;
+        }
+
+        .shop-section {
+            padding: 15px 6% 35px;
+        }
+
+        .shop-section h2 {
+            color: #a75c7e;
+            border-bottom: 2px solid #f1d2df;
+            padding-bottom: 10px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 15px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(180, 120, 150, 0.12);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .stock {
+            display: inline-block;
+            background: #e5f1e6;
+            color: #638267;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-top: 12px;
+        }
+
+        .product-card h3 {
+            color: #a75c7e;
+            margin-bottom: 5px;
+        }
+
+        .product-card p {
+            color: #777;
+            min-height: 35px;
+        }
+
+        .product-card button {
+            background: #d88ca9;
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 5px 3px;
+        }
+
+        .product-card button:hover {
+            background: #bd6f91;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #f6dce8;
+            color: #89566f;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="custom.html">Custom Order</a>
+    <a href="about.html">About</a>
+    <a href="cart.html">Cart 🛒</a>
+</nav>
+
+<header class="shop-header">
+    <h1>Our Lovely Collection ♡</h1>
+    <p>Little handmade things, made with love.</p>
+</header>
+
+<!-- HAIR ACCESSORIES -->
+<section class="shop-section">
+    <h2>🎀 Hair Accessories</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="images/anggur.jpeg" alt="Anggur Clip">
+            <span class="stock">Ready Stock</span>
+            <h3>Anggur Clip</h3>
+            <p>Handmade grape-inspired hair clip.</p>
+            <button onclick="addToCart('Anggur Clip')">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/bluluv.jpeg" alt="Bluluv Clip">
+            <span class="stock">Ready Stock</span>
+            <h3>Bluluv Clip</h3>
+            <p>Lovely handmade blue hair clip.</p>
+            <button onclick="addToCart('Bluluv Clip')">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/cerry.jpeg" alt="Ferry Clip">
+            <span class="stock">Ready Stock</span>
+            <h3>Ferry Clip</h3>
+            <p>Sweet handmade hair accessory.</p>
+            <button onclick="addToCart('Ferry Clip')">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/labu.jpeg" alt="Labu Clip">
+            <span class="stock">Ready Stock</span>
+            <h3>Labu Clip</h3>
+            <p>Cute handmade pumpkin-inspired clip.</p>
+            <button onclick="addToCart('Labu Clip')">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/set-santa.jpeg" alt="Santa Clip">
+            <span class="stock">Ready Stock</span>
+            <h3>Santa Clip</h3>
+            <p>Festive handmade Christmas hair clip.</p>
+            <button onclick="addToCart('Santa Clip')">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/bunga-pink.jpeg" alt="Pink Flower Clip">
+            <span class="stock">Ready Stock</span>
+            <h3>Pink Flower Clip</h3>
+            <p>Sweet pink handmade flower hair clip.</p>
+            <button onclick="addToCart('Pink Flower Clip')">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/bunga-putih - Copy.jpeg" alt="White Flower Clip">
+            <span class="stock">Ready Stock</span>
+            <h3>White Flower Clip</h3>
+            <p>Elegant white handmade flower hair clip.</p>
+            <button onclick="addToCart('White Flower Clip')">Add to Cart 🛒</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- FLOWER COLLECTION -->
+<section class="shop-section">
+    <h2>🌸 Flower Collection</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="images/buket.jpeg" alt="Flower Bouquet">
+            <span class="stock">Ready Stock</span>
+            <h3>Flower Bouquet</h3>
+            <p>Beautiful handmade flower bouquet.</p>
+            <button onclick="addToCart('Flower Bouquet')">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/higanbana.jpeg" alt="Higanbana">
+            <span class="stock">Ready Stock</span>
+            <h3>Higanbana</h3>
+            <p>Handmade flower, available in single or bouquet.</p>
+            <button onclick="addToCart('Higanbana Single Flower')">Single Flower</button>
+            <button onclick="addToCart('Higanbana Bouquet')">Bouquet</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/lily.jpeg" alt="Lily Flower">
+            <span class="stock">Ready Stock</span>
+            <h3>Lily</h3>
+            <p>Lovely handmade lily flower.</p>
+            <button onclick="addToCart('Lily Flower')">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/matahari.jpeg" alt="Sunflower">
+            <span class="stock">Ready Stock</span>
+            <h3>Sunflower</h3>
+            <p>Cheerful handmade sunflower.</p>
+            <button onclick="addToCart('Sunflower')">Add to Cart 🛒</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- CHRISTMAS COLLECTION -->
+<section class="shop-section">
+    <h2>🎄 Christmas Collection</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
+            <img src="images/pohon-natal.jpeg" alt="Christmas Tree">
+            <span class="stock">Ready Stock</span>
+            <h3>Christmas Tree</h3>
+            <p>Handmade Christmas decoration.</p>
+            <button onclick="addToCart('Christmas Tree')">Add to Cart 🛒</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/sweet-christmas.jpeg" alt="Sweet Christmas">
+            <span class="stock">Ready Stock</span>
+            <h3>Sweet Christmas</h3>
+            <p>Sweet handmade Christmas collection.</p>
+            <button onclick="addToCart('Sweet Christmas')">Add to Cart 🛒</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Mellow_Fluff</p>
+    <p>Little Clips, Big Happiness ♡</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

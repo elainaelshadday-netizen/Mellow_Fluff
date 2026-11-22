@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Mellow_Fluff</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Mellow_Fluff ♡</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="custom.html">Custom Order</a>
+            <a href="about.html">About</a>
+            <a href="cart.html">Cart 🛒</a>
+        </div>
+    </nav>
+</header>
+
+<main class="cart-page">
+    <h1>My Shopping Cart 🛍️</h1>
+    <p>Review your lovely creations before ordering!</p>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-summary">
+        <h2>Order Summary</h2>
+        <p>Total Items: <span id="total-items">0</span></p>
+        <h3>Total: <span id="cart-total">Rp0</span></h3>
+
+        <button class="btn" onclick="checkoutWhatsApp()">
+            Checkout via WhatsApp
+        </button>
+
+        <a href="shop.html" class="continue-shopping">
+            Continue Shopping
+        </a>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 Mellow_Fluff</p>
+    <p>Handmade with love ♡</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
